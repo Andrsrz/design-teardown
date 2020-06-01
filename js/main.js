@@ -37,6 +37,13 @@ function generateNewArticles(){
 		let title = document.createElement("h1");
 		title.innerHTML = SMALL_TEXT;
 
+		/* Check the middle article */
+		if(i % 2 != 0){
+			article.style.backgroundColor = "#595959";
+		}else{
+			article.style.backgroundColor = "#545454";
+		}
+
 		article.appendChild(photo);
 		article.appendChild(author);
 		article.appendChild(title);

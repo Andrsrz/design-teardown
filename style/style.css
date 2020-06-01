@@ -46,9 +46,12 @@ body > * {
 }
 
 .new-articles {
-	background-color: #545454;
 	height: 800px;
 	padding: 10px;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-content: center;
 }
 
 .new-articles > .photo {
