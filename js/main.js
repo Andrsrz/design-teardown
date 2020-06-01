@@ -9,7 +9,7 @@ const MAX_NEW_ARTICLES = 3;
 const MAX_OLD_ARTICLES = 6;
 const MAX_PEOPLE = 4;
 const MAX_GUIDES = 4;
-const MAX_LIST = 6;
+const MAX_LIST = 10;
 
 function createList(){
 	let list = document.createElement("ul");
@@ -107,9 +107,16 @@ function generateGuides(){
 	}
 }
 
+function populateFooter(){
+	let footer = document.getElementById("site-footer");
+	let list = createList();
+	footer.appendChild(list);
+}
+
 function pageLoaded(){
 	generateNewArticles();
 	generateOldArticles();
 	generatePeople();
 	generateGuides();
+	populateFooter();
 }

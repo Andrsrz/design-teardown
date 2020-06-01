@@ -114,4 +114,14 @@ body > * {
 #site-footer {
 	height: 200px;
 	background-color: #454545;
+	text-align: center;
+}
+
+#site-footer > ul {
+	padding-top: 50px;
+}
+
+#site-footer li {
+	display: inline;
+	margin: 0 5px 0 5px;
 }
