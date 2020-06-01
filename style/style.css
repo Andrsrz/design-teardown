@@ -35,8 +35,8 @@ body > * {
 }
 
 .photo {
-	width: 100px;
-	height: 100px;
+	width: 80px;
+	height: 80px;
 	background-color: white;
 }
 
@@ -47,12 +47,14 @@ body > * {
 
 .new-articles {
 	background-color: #545454;
+	height: 800px;
+	padding: 10px;
 }
 
 .new-articles > .photo {
 	background-color: #545454;
-	border: 2px solid #FFF;
-	border-radius: 2px;
+	border: 5px solid #FFF;
+	border-radius: 20px;
 }
 
 .old-articles {
@@ -65,8 +67,8 @@ body > * {
 
 .people > .photo {
 	background-color: #727272;
-	border: 2px solid #FFF;
-	border-radius: 2px;
+	border: 5px solid #FFF;
+	border-radius: 20px;
 }
 
 .guide {
