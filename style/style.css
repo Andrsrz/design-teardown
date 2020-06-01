@@ -1,6 +1,8 @@
 * {
 	margin: 0;
 	padding: 0;
+	background-color: #727272 !important;
+	color: #FFF;
 }
 
 html, body {
