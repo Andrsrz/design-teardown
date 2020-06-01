@@ -8,9 +8,21 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="style/style.css">
 	</head>
-	<body>
-		<header id="site-header"></header>
-		<main id="site-main"></main>
-		<footer id="site-footer"></footer>
+	<body onload="pageLoaded();">
+		<header id="site-header">
+			<span id="site-header-logo"></span>
+			<ul id="site-header-nav-bar"></ul>
+			<input type="text"/>
+		</header>
+		<main id="site-main">
+			<div id="site-main-new-articles" class="new-articles"></div>
+			<div id="site-main-old-articles" class="old-articles"></div>
+			<div id="site-main-people" class="people"></div>
+			<div id="site-main-guides" class="guides"></div>
+		</main>
+		<footer id="site-footer">
+			<ul id="site-footer-links"></ul>
+		</footer>
+		<script type="text/javascript" src="js/main.js"></script>
 	</body>
 </html>
