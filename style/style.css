@@ -35,8 +35,8 @@ body > * {
 }
 
 .photo {
-	width: 50px;
-	height: 50px;
+	width: 100px;
+	height: 100px;
 	background-color: white;
 }
 
@@ -45,12 +45,14 @@ body > * {
 	flex-direction: row;
 }
 
-#site-main-new-articles > div {
-	width: 100%;
-}
-
 .new-articles {
 	background-color: #545454;
+}
+
+.new-articles > .photo {
+	background-color: #545454;
+	border: 2px solid #FFF;
+	border-radius: 2px;
 }
 
 .old-articles {
@@ -59,6 +61,12 @@ body > * {
 
 .people {
 	background-color: #727272;
+}
+
+.people > .photo {
+	background-color: #727272;
+	border: 2px solid #FFF;
+	border-radius: 2px;
 }
 
 .guide {
