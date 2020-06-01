@@ -1,3 +1,4 @@
+const WORD = "Lorem";
 const MINI_TEXT = "Lorem ipsum dolor sit amet";
 const SMALL_TEXT = "Lorem ipsum dolor sit amet, ad congue postea eos. Ad pri nulla graeci, \
 eam ne ornatus appetere, quo rebum alienum.";
@@ -7,6 +8,18 @@ ius, usu an omnes doming dissentiunt. Zril detraxit reformidans his te.";
 const MAX_NEW_ARTICLES = 3;
 const MAX_OLD_ARTICLES = 6;
 const MAX_PEOPLE = 4;
+const MAX_GUIDES = 4;
+const MAX_LIST = 6;
+
+function createList(){
+	let list = document.createElement("ul");
+	for(let i = 0; i < MAX_LIST; i++){
+		listItem = document.createElement("li");
+		listItem.innerHTML = WORD;
+		list.appendChild(listItem);
+	}
+	return list;
+}
 
 function generateNewArticles(){
 	let newArticlesDiv = document.getElementById("site-main-new-articles");
@@ -51,6 +64,8 @@ function generatePeople(){
 	for(let i = 0; i < MAX_PEOPLE; i++){
 		let people = document.createElement("div");
 		people.setAttribute("class", "people");
+		let photo = document.createElement("div");
+		photo.setAttribute("class", "photo");
 		let name = document.createElement("h4");
 		name.innerHTML = MINI_TEXT;
 		let latestArticleTitle = document.createElement("h2");
@@ -58,6 +73,7 @@ function generatePeople(){
 		let latestArticleBody = document.createElement("h3");
 		latestArticleBody.innerHTML = SMALL_TEXT;
 
+		people.appendChild(photo);
 		people.appendChild(name);
 		people.appendChild(latestArticleTitle);
 		people.appendChild(latestArticleBody);
@@ -65,8 +81,25 @@ function generatePeople(){
 	}
 }
 
+function generateGuides(){
+	let guidesDiv = document.getElementById("site-main-guides");
+	/* Generate 4 guides */
+	for(let i = 0; i < MAX_PEOPLE; i++){
+		let guide = document.createElement("div");
+		guide.setAttribute("class", "guide");
+		let title = document.createElement("h2");
+		title.innerHTML = SMALL_TEXT;
+		let list = createList();
+
+		guide.appendChild(title);
+		guide.appendChild(list);
+		guidesDiv.appendChild(guide);
+	}
+}
+
 function pageLoaded(){
 	generateNewArticles();
 	generateOldArticles();
 	generatePeople();
+	generateGuides();
 }
