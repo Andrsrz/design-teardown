@@ -1,7 +1,6 @@
 * {
 	margin: 0;
 	padding: 0;
-	background-color: #727272 !important;
 	color: #FFF;
 }
 
@@ -22,16 +21,15 @@ body > * {
 
 #site-header {
 	height: 80px;
-	background-color: red;
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-around;
 	align-content: center;
+	background-color: #454545;
 }
 
 #site-main {
 	height: 100%;
-	background-color: blue;
 	display: flex;
 	flex-flow: column nowrap;
 }
@@ -51,7 +49,23 @@ body > * {
 	width: 100%;
 }
 
+.new-articles {
+	background-color: #545454;
+}
+
+.old-articles {
+	background-color: #727272;
+}
+
+.people {
+	background-color: #727272;
+}
+
+.guide {
+	background-color: #727272;
+}
+
 #site-footer {
 	height: 200px;
-	background-color: orange;
+	background-color: #454545;
 }
