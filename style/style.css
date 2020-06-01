@@ -11,9 +11,11 @@ html, body {
 }
 
 body{
-	display: flex;
-	flex-flow: column nowrap;
-	justify-content: center;
+	display: table;
+}
+
+body > * {
+	display: table-row;
 }
 
 #site-header {
@@ -41,7 +43,6 @@ body{
 #site-main > div {
 	display: flex;
 	flex-direction: row;
-	flex-shrink: nowrap;
 }
 
 #site-main-new-articles > div {
