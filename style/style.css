@@ -55,17 +55,39 @@ body > * {
 }
 
 .new-articles > .photo {
-	background-color: #545454;
+	background-color: #727272;
 	border: 5px solid #FFF;
 	border-radius: 20px;
 }
 
+#site-main-old-articles {
+	display: flex;
+	flex-flow: row wrap;
+}
+
 .old-articles {
 	background-color: #727272;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-around;
+	align-content: center;
+	width: 33.333333%;
+	height: 500px;
+}
+
+#site-main-people {
+	display: flex;
+	flex-flow: row wrap;
 }
 
 .people {
-	background-color: #727272;
+	background-color: #545454;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-around;
+	align-content: center;
+	width: 50%;
+	height: 250px;
 }
 
 .people > .photo {
@@ -74,8 +96,19 @@ body > * {
 	border-radius: 20px;
 }
 
+#site-main-guides {
+	display: flex;
+	flex-flow: row nowrap;
+}
+
 .guide {
 	background-color: #727272;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-around;
+	align-content: center;
+	width: 25%;
+	height: 500px;
 }
 
 #site-footer {
