@@ -6,6 +6,7 @@ menandri ea. Facer melius eruditi no mei, an semper molestiae eos. At viris tibi
 ius, usu an omnes doming dissentiunt. Zril detraxit reformidans his te.";
 const MAX_NEW_ARTICLES = 3;
 const MAX_OLD_ARTICLES = 6;
+const MAX_PEOPLE = 4;
 
 function generateNewArticles(){
 	let newArticlesDiv = document.getElementById("site-main-new-articles");
@@ -44,7 +45,28 @@ function generateOldArticles(){
 	}
 }
 
+function generatePeople(){
+	let peopleDiv = document.getElementById("site-main-people");
+	/* Generate 4 people */
+	for(let i = 0; i < MAX_PEOPLE; i++){
+		let people = document.createElement("div");
+		people.setAttribute("class", "people");
+		let name = document.createElement("h4");
+		name.innerHTML = MINI_TEXT;
+		let latestArticleTitle = document.createElement("h2");
+		latestArticleTitle.innerHTML = MINI_TEXT;
+		let latestArticleBody = document.createElement("h3");
+		latestArticleBody.innerHTML = SMALL_TEXT;
+
+		people.appendChild(name);
+		people.appendChild(latestArticleTitle);
+		people.appendChild(latestArticleBody);
+		peopleDiv.appendChild(people);
+	}
+}
+
 function pageLoaded(){
 	generateNewArticles();
 	generateOldArticles();
+	generatePeople();
 }
