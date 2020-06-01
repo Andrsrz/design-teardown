@@ -1,2 +1,5 @@
-# design-teardown
-The Odin Project - Project Design Teardown
+# Design Teardown
+[The Odin Project]() - [Project Design Teardown]()
+
+## License
+[MIT]()
