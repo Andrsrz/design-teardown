@@ -24,6 +24,12 @@ function createList(){
 	return list;
 }
 
+function populateHeader(){
+	let header = document.getElementById("site-header");
+	let list = createList();
+	header.appendChild(list);
+}
+
 function generateNewArticles(){
 	let newArticlesDiv = document.getElementById("site-main-new-articles");
 	/* The newest articles are three, so we loop three times to create them */
@@ -114,6 +120,7 @@ function populateFooter(){
 }
 
 function pageLoaded(){
+	populateHeader();
 	generateNewArticles();
 	generateOldArticles();
 	generatePeople();

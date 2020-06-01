@@ -26,6 +26,16 @@ body > * {
 	justify-content: space-around;
 	align-content: center;
 	background-color: #454545;
+	font-size: 30px;
+}
+
+#site-header li {
+	display: inline;
+	margin: 0 5px 0 5px;
+}
+
+#site-header li > a {
+	text-decoration: none;
 }
 
 #site-main {
