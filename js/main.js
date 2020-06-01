@@ -15,7 +15,10 @@ function createList(){
 	let list = document.createElement("ul");
 	for(let i = 0; i < MAX_LIST; i++){
 		listItem = document.createElement("li");
-		listItem.innerHTML = WORD;
+		listLink = document.createElement("a");
+		listLink.innerHTML = WORD;
+		listLink.setAttribute("href", "#");
+		listItem.appendChild(listLink);
 		list.appendChild(listItem);
 	}
 	return list;
